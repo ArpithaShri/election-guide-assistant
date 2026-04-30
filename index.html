@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ElectIQ - Your personal election guide assistant for informed voting.">
+    <title>ElectIQ — Election Guide Assistant</title>
+    
+    <!-- Google Fonts: DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Root Container for the Application -->
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-icon">🗳️</span>
+                    <span class="logo-text">ElectIQ</span>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Guide</a>
+                    <a href="#" class="nav-link">Candidates</a>
+                    <a href="#" class="nav-link">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <h1 class="hero-title">Your AI-Powered <span class="text-accent">Election Guide</span></h1>
+                    <p class="hero-subtitle">Make informed decisions with real-time insights, candidate breakdowns, and simplified policy analysis.</p>
+                </section>
+
+                <!-- Chat Interface -->
+                <div class="chat-container">
+                    <div id="chat-messages" class="chat-messages">
+                        <!-- Messages will appear here -->
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="user-input" placeholder="Ask about candidates, dates, or policies..." aria-label="Ask a question">
+                        <button id="send-btn" class="send-btn">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                            <span>Ask AI</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 ElectIQ — Empowering Informed Voters.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Configuration (API Keys, etc.) linked before app logic -->
+    <script src="config.js"></script>
+    <!-- Application Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
