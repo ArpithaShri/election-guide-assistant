@@ -278,6 +278,40 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+.message.error {
+    align-self: center;
+    background-color: #FEE2E2;
+    color: #991B1B;
+    border: 1px solid #F87171;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    height: 20px;
+}
+
+.typing-indicator span {
+    width: 6px;
+    height: 6px;
+    background-color: var(--text-muted);
+    border-radius: 50%;
+    display: inline-block;
+    animation: typing 1.4s infinite ease-in-out both;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes typing {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+}
+
 /* Input Bar */
 .chat-input-bar {
     padding: 1.5rem 2rem;
